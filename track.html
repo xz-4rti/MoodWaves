@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Tracker</title>
+    <link rel="stylesheet" href="./styles/track.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Video background -->
+    <div class="video-container">
+        <video autoplay muted loop id="background-video">
+            <source src="./imagen/cinnamoroll-flying.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="main-container">
+        <div class="topHead">
+            <div class="back"><img src="./imagen/back.png" alt="back"></div>
+            <div class="title">
+                <h1>ᯓᡣ𐭩 Track Your Mood ᯓᡣ𐭩</h1>
+            </div>
+        </div>
+
+        <div class="container">
+
+            <div class="mood-container">
+                <button class="left">↩</button>
+                <div class="mood-card">
+                    <h2>Select your mood today</h2>
+                    <img class="mood">
+                    <h2 class="mood-name"></h2>
+                </div>
+                <button class="right">↪</button>
+            </div>
+
+            <div class="calender">
+                <h2>Mood Log</h2>
+                <div id="logs-list"></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./scripts/moodtracker.js"></script>
+
+</html>
